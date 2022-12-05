@@ -1,1 +1,42 @@
 
+<style>
+    p {
+        background-color:aliceblue;
+    }
+</style>
+<title>Adventures of the </title>
+<script>
+ 
+
+   function hello()
+   {
+            var textbox = document.getElementById('textbox');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "7")
+            {
+                heading.innerHTML= "Wow! You guessed " + textbox.value + "correctly. You are now a registered phsycic.";
+            }
+            else{
+                heading.innerHTML= "The number " + textbox.value + " is WRONG. You're not a psycic.";
+            }
+            
+            heading.style = "background-color:red";
+        }
+
+</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Make Enzo Feel BIG Feelings</title>
+</head>
+
+
+<body>
+    <h1 id="heading" style="background-color:blue">This is where you will find if you guessed right!</h1>
+<img id="bigpic" src="bigpic" />
+<p>I'm thinking of a number from 1-10, guess it in the text box below: </p><input id="textbox" type="text"><button onclick="hello();">Press this to guess!</button>
+
+    <button onclick="picture()">Make me feel murderous</button>
+    <button onclick="picture2()">Make me feel sad</button>
+    <button onclick="picture3()">Make me feel happy</button>
+</body>
+</html>
