@@ -7,17 +7,20 @@
 <title>Adventures of the </title>
 <script>
  
-
+    function display1()
+    {
+        
+    }
    function hello()
    {
             var textbox = document.getElementById('textbox');
             var heading = document.getElementById('heading');
-            if (textbox.value == "7")
+            if (textbox.value == "red")
             {
-                heading.innerHTML= "Wow! You guessed " + textbox.value + "correctly. You are now a registered phsycic.";
+                heading.innerHTML= "You see a man lying on the floor. He has sat on his left nutsack.";
             }
             else{
-                heading.innerHTML= "The number " + textbox.value + " is WRONG. You're not a psycic.";
+                heading.innerHTML= "You open the door and see a vast audience of white people in their mid 60's laughing at a facebook comic.";
             }
             
             heading.style = "background-color:red";
@@ -31,12 +34,10 @@
 
 
 <body>
-    <h1 id="heading" style="background-color:blue">This is where you will find if you guessed right!</h1>
+    <h1 id="heading" >In front of you are 2 doors. There is a red door and a blue door. You hear a young man scream behind the red door. It is a blood curdling scream that makes your blood boil. Behind the red door you ear soft laughter. Laughter like a thousand people in one space in time. The kind of laugh that goes on forever with no end in sight. Tell me the color of door you want to open.
+      </h1>
 <img id="bigpic" src="bigpic" />
-<p>I'm thinking of a number from 1-10, guess it in the text box below: </p><input id="textbox" type="text"><button onclick="hello();">Press this to guess!</button>
+<input id="textbox" type="text"><button onclick="hello();">Submit answer</button>
 
-    <button onclick="picture()">Make me feel murderous</button>
-    <button onclick="picture2()">Make me feel sad</button>
-    <button onclick="picture3()">Make me feel happy</button>
 </body>
 </html>
