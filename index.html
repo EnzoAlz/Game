@@ -60,7 +60,43 @@
                   
             }
             else{
-                heading.innerHTML+= "<p> Why the hell would you taste it? Its a strange yellow sludge! The fact that this intrusive thought entered your mind is wierd. But that is just the human mind. In any case you move on. ";
+                heading.innerHTML+= "<p> Why the hell would you taste it? Its a strange yellow sludge! The fact that this intrusive thought entered your mind is wierd. But that is just the human mind. In any case you move on. Suddenly you find this yellow trail leads to a man. He seems tired. You hear his raspy voice just like he has been screaming. Next to him you see a ornate box. It is lined with gold and silver. Do you want to help the man or look in his box? ";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+             
+             function hello4()
+            {
+            var textbox = document.getElementById('textbox4');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "help the man")
+            {
+    
+                heading.innerHTML+= "<p>... ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> ... ";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+
+             function hello5()
+            {
+            var textbox = document.getElementById('textbox5');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "yes")
+            {
+    
+                heading.innerHTML+= "<p>...  ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p>... ";
                 
             
             heading.style = "background-color:aliceblue";
@@ -72,11 +108,12 @@
 
 
 <body>
-    <h1 id="heading" > BRIGGGGGGGGG BRINGGGGGG. You slap your hand over the annoying alarm clock and it shuts up. Who knew waking up on a ship was so terrible. But with the new and improved Oumuamua passenger ships life is a blast. At least according to the brochure. Suddenly you hear screamign outside your quarters. It sounds like a little girl. But not just any scream, not just an annoyed kid scream, but a full on life threatning blood curdling eyebrow furrling head banging terrifying sream. You quickly jump into your on board cloaths. Do you want to investigate this scream? </h1>
+    <h1 id="heading" > BRIGGGGGGGGG BRINGGGGGG. You slap your hand over the annoying alarm clock and it shuts up. Who knew waking up on a ship was so terrible. But with the new and improved Oumuamua passenger ships life is a blast. At least according to the brochure. Suddenly you hear screamign outside your quarters. It sounds like a little girl. But not just any scream, not just an annoyed kid scream, but a full on life threatning blood curdling eyebrow furrling head banging terrifying sream. You quickly jump into your on board clothes. Do you want to investigate this scream? </h1>
 <p>1</p> <input id="textbox" type="text"><button onclick="hello();" >yes or no</button>
     <p>2</p>  <input id="textbox2" type="text"><button onclick="hello2();">yes or no</button><p>
-        <p>3</p>  <input id="textbox3" type="text"><button onclick="hello3();">yes or no</button><p>
+        <p>3</p>  <input id="textbox3" type="text"><button onclick="hello3();">help the man or look in the box</button><p>
             <p>4</p>  <input id="textbox4" type="text"><button onclick="hello4();">yes or no</button><p>
+                <p>5</p>  <input id="textbox5" type="text"><button onclick="hello5();">yes or no</button><p></p>
 
 </body>
 </html>
