@@ -1,17 +1,17 @@
 
 <style>
     p {
-        background-color:(0,0,0);
+        background-color:aliceblue;
     }
 </style>
 
 <title>The mighty Oumuamua.</title>
-(<!--This is just to explain the game.-->)
 <head>
     <h1> Welcome traveler! You have wandered into my game. Welcome. Before you start there are a few rules you have to follow. 1, after you have used a text box and ansewered a question do not use that text box again. 2, if you die you must restart your game browser. 3, enjoy yorself! This is a browser game made by a student. Just enjoy playing and have fun.</h1>
 </head>
-(<!--Below is the hardest part for me. In this section of my code is where everything starts to work. This part reads the inputs to each text box and adds to the text accordingly. Instead of giving the player 2 options and doubling my work I just made it so if anything else is said it will be counted as as else. I still give the 2 options clearly as not to confuse the player. -->)
-(<!-- I quickly figured out how to do the below part because I was worried about the time I had left to finish the game. Because of this I will add more to the website like possibly music, images or a longer story. As well I used mostly inline css because I find it easiest to work with and understand.-->)
+<!--Below is the hardest part for me. In this section of my code is where everything starts to work. This part reads the inputs to each text box and adds to the text accordingly. Instead of giving the player 2 options and doubling my work I just made it so if anything else is said it will be counted as as else. I still give the 2 options clearly as not to confuse the player. -->
+<!-- I quickly figured out how to do the below part because I was worried about the time I had left to finish the game. Because of this I will add more to the website like possibly music, images or a longer story. As well I used mostly inline css because I find it easiest to work with and understand.-->
+<!--This is just to explain the game.-->
 <script>
  
    
@@ -76,7 +76,7 @@
             if (textbox.value == "help the man")
             {
     
-                heading.innerHTML+= "<p> 'Thank you for helping me. I know everyting seems strange but we should be alright. Inside this box is whatever caused this evil plauge. I don't even know what this thing is but out of nowhere my daughter, my dear daughter started screaming. And then she lunged at me. I saw this at the ground and threw it into this box. Please get out of here and find a cure. I beg you!' You suddenly feel empowered. In this mans final breath he bestows upon you a way to save the world form this wierd plauge. Next to you is a staircase. Do you want to go up or down the staircase?   ";
+                heading.innerHTML+= "<p> 'Thank you for helping me. I know everyting seems strange but we should be alright. Inside this box is whatever caused this evil plauge. I don't even know what this thing is but out of nowhere my daughter, my dear daughter started screaming. And then she lunged at me. I saw this at the ground and threw it into this box. Please get out of here and find a cure. If you go all the way up that staircase you can reach the escape bay. Run! I beg you!' You suddenly feel empowered. In this mans final breath he bestows upon you a way to save the world form this wierd plauge. Next to you is a staircase. Do you want to go up or down the staircase?   ";
                   
             }
             else{
@@ -94,6 +94,60 @@
             if (textbox.value == "up")
             {
     
+                heading.innerHTML+= "<p> You head up the staircase. You go up untill you can no longer go uo any higher. Next to you is the escape bay. You hop in one of the ships and hit eject. The pod lurches forward pilling your skin tight. Suddenly in front of you isna wierd ship. Its almost animal like. It opens its massive mouth and screams, it turns and charges you. At the worst possible moment the ship stops working. You reach for the controlls and grab them in the nick of time. Do you pull the pod left, or right?";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You go down the staircase. The steps are wet for some reason. Slowly you walk down the steps. The box starts moving. Why would it do that. It starts moving more and more. Almost like something inseide is moving. You loose your grasp on the box and slip. You fall backwards and break the box. As well as your spine. In your lasts breaths you see a spider like thing crawl from the box into the walls. Please reset your browser. ";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+            
+             function hello6()
+            {
+            var textbox = document.getElementById('textbox6');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "right")
+            {
+    
+                heading.innerHTML+= "<p> You pull the controlls to the right and steer clear of the path. You scream in celebration! Your celebration comes to a stop when you see it turn around. You look at the controlls. You see knobs and dials but don't know what each of them do. You know you need to speed up to escape. Suddenly a lever catches your eye. Do you push it or pull it? ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You pull the controlls to the left and just pass it. But its wierd tentacle grabs you and throws you into its gaping mouth. You die. Please restart the game.";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+
+             function hello7()
+            {
+            var textbox = document.getElementById('textbox7');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "pull")
+            {
+    
+                heading.innerHTML+= "<p> You pull the lever and stall to a hault. The animal thing opens its mouth and roars out a scream. It consumes you whole. Please restart the game.";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You push the lever as far as it can go. You almost have the chance to breath before the craft speeds into the distance with you just along for the ride. You speed forward continuously with no end in sight";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+
+             function hello8()
+            {
+            var textbox = document.getElementById('textbox8');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "up")
+            {
+    
                 heading.innerHTML+= "<p> You head up the staircase. ";
                   
             }
@@ -105,17 +159,59 @@
                  }
              }
 
+             function hello9()
+            {
+            var textbox = document.getElementById('textbox9');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "up")
+            {
+    
+                heading.innerHTML+= "<p> You head up the staircase. ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You go down the staircase. The steps are wet for some reason. Slowly you walk down the steps. The box starts moving. Why would it do that. It starts moving more and more. Almost like something inseide is moving. You loose your grasp on the box and slip. You fall backwards and break the box. As well as your spine. In your lasts breaths you see a spider like thing crawl from the box into the walls. Please reset your browser. ";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+
+             function hello10()
+            {
+            var textbox = document.getElementById('textbox10');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "up")
+            {
+    
+                heading.innerHTML+= "<p> You head up the staircase. ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You go down the staircase. The steps are wet for some reason. Slowly you walk down the steps. The box starts moving. Why would it do that. It starts moving more and more. Almost like something inseide is moving. You loose your grasp on the box and slip. You fall backwards and break the box. As well as your spine. In your lasts breaths you see a spider like thing crawl from the box into the walls. Please reset your browser. ";
+                
+            
+            heading.style = "background-color:aliceblue";
+                 }
+             }
+
+             
 </script>
 
-(<!-- One point where I got support on my project was with the number input text boxes. For some reason every text box only affected the first question. I asked for help and learned that on all funtions I had set each to work with textbox 1 althoug I worked alone on this project.-->)
-(<!-- Below is the textboxes and thier ID's. I tried to make them as easy to tell apart as possible.-->)
+<!-- One point where I got support on my project was with the number input text boxes. For some reason every text box only affected the first question. I asked for help and learned that on all funtions I had set each to work with textbox 1 althoug I worked alone on this project.-->
+<!-- Below is the textboxes and thier ID's. I tried to make them as easy to tell apart as possible.-->
 <body>
     <h1 id="heading" > BRIGGGGGGGGG BRINGGGGGG. You slap your hand over the annoying alarm clock and it shuts up. Who knew waking up on a ship was so terrible. But with the new and improved Oumuamua passenger ships life is a blast. At least according to the brochure. Suddenly you hear screamign outside your quarters. It sounds like a little girl. But not just any scream, not just an annoyed kid scream, but a full on life threatning blood curdling eyebrow furrling head banging terrifying sream. You quickly jump into your on board clothes. Do you want to investigate this scream? </h1>
 <p>1</p> <input id="textbox" type="text"><button onclick="hello();" >yes or no</button>
     <p>2</p>  <input id="textbox2" type="text"><button onclick="hello2();">yes or no</button><p>
         <p>3</p>  <input id="textbox3" type="text"><button onclick="hello3();">yes or no </button><p>
             <p>4</p>  <input id="textbox4" type="text"><button onclick="hello4();">help the man or no</button><p>
-                <p>5</p>  <input id="textbox5" type="text"><button onclick="hello5();">yes or no</button><p></p>
+                <p>5</p>  <input id="textbox5" type="text"><button onclick="hello5();">up or down</button><p></p>
+                    <p>6</p>  <input id="textbox6" type="text"><button onclick="hello6();">right or left</button><p></p>
+                        <p>7</p>  <input id="textbox7" type="text"><button onclick="hello7();">push or pull?</button><p></p>
+                            <p>8</p>  <input id="textbox8" type="text"><button onclick="hello8();">yes or no</button><p></p>
+                                <p>9</p>  <input id="textbox9" type="text"><button onclick="hello9();">yes or no</button><p></p>
+                                    <p>10</p>  <input id="textbox10" type="text"><button onclick="hello10();">yes or no</button><p></p>  
 
 </body>
 </html>
