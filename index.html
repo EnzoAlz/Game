@@ -1,4 +1,5 @@
 
+<html>
 <style>
 
    
@@ -237,7 +238,7 @@
             if (textbox.value == "yes")
             {
     
-                heading.innerHTML+= "<p> You grab your keycard and slowly open the door.In the middle of the room is a young girl. her chest is slowly rising and falling as air enters her lungs. 'Watch out, she bites' you warn. They pull out a long stick with a dog collar like attachment on the end and attach it to the young girl. She wakes up and attemps to charge the team, but is stopped by the long stick. She screams in rage but is unable to do anything else on account of the long stick.  ";
+                heading.innerHTML+= "<p> You grab your keycard and slowly open the door. In the middle of the room is a young girl. her chest is slowly rising and falling as air enters her lungs. 'Watch out, she bites' you warn. They pull out a long stick with a dog collar like attachment on the end and attach it to the young girl. She wakes up and attemps to charge the team, but is stopped by the long stick. She screams in rage but is unable to do anything else on account of the long stick. You and the group make it to the escape pod and the girl is transported back to earth. Suddenly the ship erupts in sound. A large apendage reaches for the escaping ship but misses. The ship seems to be infested by a massive building. A large tentacle like apendage bursts through the ground at a alarming speed and grabs a reasercher near you. You jump backwards in fear. You look up and see 2 paths. One says controll room and the other says exit. Witch do you want to take?";
                   
             }
             else{
@@ -250,14 +251,32 @@
             {
             var textbox = document.getElementById('textbox15');
             var heading = document.getElementById('heading');
-            if (textbox.value == "yes")
+            if (textbox.value == "exit")
             {
-    
-                heading.innerHTML+= "<p> ...";
+
+                heading.innerHTML+= "<p> You run for the exit at light speed, but a tentcle blocks your path. You try to run around it but another tentacle just takes its place. You end up surrounded. Please restart the game. ";
                   
             }
             else{
-                heading.innerHTML+= "<p>...";
+                heading.innerHTML+= "<p>You decide not to run this time. You head for the control room at a rapid pace, escaping the grasp of the monster. You hear defening screams and slamming sounds but continue onward.When you get to the escape room you find a massive controll panel. You see almost a thousand buttons. In the center of all off them is a large red button enclosed in a clear plastic case. It has black and yellow stripes around it and a interesting warning. 'Press only as a last resort. Self destruct button will kill everything onboard.' This button would kill you but also the massive world ending monster that lives in the Oumuamua. Do you press it?";
+                
+
+                 }
+             }
+
+
+             function hello16()
+            {
+            var textbox = document.getElementById('textbox16');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "yes")
+            {
+
+                heading.innerHTML+= "<p> You open the case and the button begins glowing. You place your hand over it and push down. The Oumuamua explodes in a fireball due to the oxygen inside and hydrogen containers. You have saved the Oumuamua. You have completed my game. Thank you for playing. ";
+                  
+            }
+            else{
+                heading.innerHTML+= "<p> You decide not to explode the Oumuamua and you with it. You once again see the creator juging you for your decision. Please restart the game.  ";
                 
 
                  }
@@ -286,8 +305,9 @@
                                         <p>10</p>  <input id="textbox11" type="text"><button onclick="hello11();">yes or no?</button>
                                             <p>11</p>  <input id="textbox12" type="text"><button onclick="hello12();">oumuamua or large star?</button>
                                                 <p>12</p>  <input id="textbox13" type="text"><button onclick="hello13();">nerds yellow trail or your path?</button>
-                                                    <p>13</p>  <input id="textbox14" type="text"><button onclick="hello14();">yes or no</button>
-                                                        <p>14</p>  <input id="textbox15" type="text"><button onclick="hello15();">yes or no</button>
+                                                    <p>13</p>  <input id="textbox14" type="text"><button onclick="hello14();">yes or no?</button>
+                                                        <p>14</p>  <input id="textbox15" type="text"><button onclick="hello15();">control room or exit?</button>
+                                                            <p>15</p>  <input id="textbox16" type="text"><button onclick="hello16();">yes or no?</button>
 
 </body>
 </html>
